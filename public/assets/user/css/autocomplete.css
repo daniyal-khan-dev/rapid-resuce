@@ -1,0 +1,150 @@
+/* ── Nominatim Autocomplete Dropdown */
+
+.rr-autocomplete-wrap {
+    position: relative;
+}
+
+/* The suggestions dropdown box */
+.rr-sug-box {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: #0f1624;
+    border: 1px solid rgba(215, 44, 66, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.04);
+    overflow: hidden;
+    max-height: 280px;
+    overflow-y: auto;
+    display: none;
+    animation: rrSugIn 0.18s ease;
+}
+
+.rr-sug-box[data-open="true"] {
+    display: block;
+}
+
+@keyframes rrSugIn {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scrollbar */
+.rr-sug-box::-webkit-scrollbar {
+    width: 4px;
+}
+
+.rr-sug-box::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.rr-sug-box::-webkit-scrollbar-thumb {
+    background: rgba(215, 44, 66, 0.4);
+    border-radius: 2px;
+}
+
+/* Individual suggestion item */
+.rr-sug-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 11px 14px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: background 0.14s;
+    outline: none;
+}
+
+.rr-sug-item:last-child {
+    border-bottom: none;
+}
+
+.rr-sug-item:hover,
+.rr-sug-item:focus {
+    background: rgba(215, 44, 66, 0.12);
+}
+
+.rr-sug-item.rr-sug-state {
+    cursor: default;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.82rem;
+    align-items: center;
+}
+
+.rr-sug-item.rr-sug-state:hover {
+    background: transparent;
+}
+
+/* Icon */
+.rr-sug-icon {
+    color: var(--rr-primary, #D72C42);
+    font-size: 0.82rem;
+    margin-top: 3px;
+    flex-shrink: 0;
+    width: 14px;
+}
+
+/* Text stack */
+.rr-sug-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.rr-sug-main {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rr-sug-sub {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.45);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 1px;
+}
+
+/* Field error message */
+.rr-field-error {
+    display: block;
+    font-size: 0.78rem;
+    color: #ef4444;
+    margin-top: 4px;
+    min-height: 1.1em;
+    font-weight: 500;
+}
+
+/* Input error state */
+.rr-input.rr-input--error {
+    border-color: #ef4444 !important;
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.18);
+}
+
+/* Selected location badge (shown after selection) */
+.rr-location-selected {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.76rem;
+    color: #10b981;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.rr-location-selected i {
+    font-size: 0.7rem;
+}

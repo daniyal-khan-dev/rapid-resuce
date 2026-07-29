@@ -1,0 +1,201 @@
+.rr-legal-hero {
+    background: var(--rr-grad-hero);
+    padding: 120px 0 56px;
+    position: relative;
+    overflow: hidden;
+}
+
+.rr-legal-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 15% 60%, rgba(232, 74, 95, 0.22), transparent 50%),
+        radial-gradient(circle at 85% 25%, rgba(31, 46, 78, 0.35), transparent 55%);
+}
+
+.rr-legal-hero .container {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.rr-legal-hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 999px;
+    padding: 6px 18px;
+    font-size: 0.80rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 20px;
+}
+
+.rr-legal-hero h1 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 900;
+    color: #fff;
+    margin: 0 0 14px;
+    line-height: 1.2;
+}
+
+.rr-legal-hero p {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.rr-legal-toc {
+    background: var(--rr-bg-soft);
+    border: 1px solid var(--rr-border);
+    border-radius: var(--rr-radius);
+    padding: 24px 28px;
+    margin-bottom: 48px;
+}
+
+.rr-legal-toc h6 {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--rr-text-light);
+    margin: 0 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rr-legal-toc h6 i {
+    color: var(--rr-primary);
+}
+
+.rr-legal-toc ol {
+    margin: 0;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 24px;
+}
+
+@media (max-width: 600px) {
+    .rr-legal-toc ol {
+        grid-template-columns: 1fr;
+    }
+}
+
+.rr-legal-toc li a {
+    color: var(--rr-navy);
+    text-decoration: none;
+    font-size: 0.90rem;
+    font-weight: 500;
+    transition: color .2s;
+}
+
+.rr-legal-toc li a:hover {
+    color: var(--rr-primary);
+}
+
+.rr-legal-section {
+    margin-bottom: 44px;
+    scroll-margin-top: 90px;
+}
+
+.rr-legal-section h2 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--rr-navy);
+    margin: 0 0 14px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--rr-primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rr-legal-section h2 i {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: var(--rr-primary-50);
+    color: var(--rr-primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.rr-legal-section p,
+.rr-legal-section li {
+    color: var(--rr-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.75;
+}
+
+.rr-legal-section ul {
+    padding-left: 20px;
+    margin: 10px 0 0;
+}
+
+.rr-legal-section ul li {
+    margin-bottom: 6px;
+}
+
+.rr-legal-updated {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--rr-bg-warm);
+    border: 1px solid rgba(var(--rr-primary-rgb), 0.18);
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-size: 0.85rem;
+    color: var(--rr-primary);
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.rr-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 14px;
+    font-size: 0.9rem;
+}
+
+.rr-data-table th {
+    background: var(--rr-primary);
+    color: #fff;
+    padding: 10px 16px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 0.82rem;
+    letter-spacing: 0.3px;
+}
+
+.rr-data-table th:first-child {
+    border-radius: 8px 0 0 0;
+}
+
+.rr-data-table th:last-child {
+    border-radius: 0 8px 0 0;
+}
+
+.rr-data-table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--rr-border);
+    color: var(--rr-text-muted);
+    vertical-align: top;
+}
+
+.rr-data-table tr:last-child td {
+    border-bottom: none;
+}
+
+.rr-data-table tr:nth-child(even) td {
+    background: var(--rr-bg-soft);
+}

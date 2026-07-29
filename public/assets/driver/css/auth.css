@@ -1,0 +1,518 @@
+/* ── Driver login page ── */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    background: #f5f6fa;
+    min-height: 100vh;
+}
+
+/* ── Two-panel layout (desktop) ── */
+.driver-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+/* ── Left hero panel ── */
+.driver-hero {
+    background: linear-gradient(145deg, #0F1A2E 0%, #1F2E4E 50%, #6B0F1A 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 52px 48px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.driver-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 10% 25%, rgba(185, 28, 44, 0.28) 0%, transparent 45%),
+        radial-gradient(circle at 85% 75%, rgba(15, 26, 46, 0.60) 0%, transparent 55%);
+}
+
+.driver-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('../img/background/ambulance-bg.jpg') center / cover no-repeat;
+    opacity: 0.10;
+    mix-blend-mode: screen;
+}
+
+.driver-hero-inner {
+    position: relative;
+    z-index: 2;
+}
+
+/* logo in hero */
+.driver-hero-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.driver-hero-logo img {
+    height: 46px;
+    filter: brightness(0) invert(1);
+}
+
+.driver-hero-logo-text strong {
+    display: block;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.driver-hero-logo-text small {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+/* hero content */
+.driver-hero-content {
+    margin-top: 56px;
+}
+
+.driver-hero-content h2 {
+    font-size: clamp(1.7rem, 2.5vw, 2.2rem);
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 14px;
+    line-height: 1.2;
+}
+
+.driver-hero-content p {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 1rem;
+    margin: 0 0 32px;
+}
+
+/* status cards */
+.driver-status-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.driver-status-card {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 18px 16px;
+    backdrop-filter: blur(8px);
+}
+
+.driver-status-card i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: rgba(185, 28, 44, 0.20);
+    color: #f87184;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.driver-status-card h6 {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0 0 3px;
+}
+
+.driver-status-card span {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.78rem;
+}
+
+.driver-hero-footer {
+    position: relative;
+    z-index: 2;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.82rem;
+}
+
+/* ── Right form panel ── */
+.driver-form-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 52px 56px;
+    background: #fff;
+}
+
+.driver-form-inner {
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* desktop logo (shown on desktop, hidden on mobile) */
+.driver-desktop-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 11px;
+    text-decoration: none;
+    margin-bottom: 28px;
+}
+
+.driver-desktop-logo img {
+    height: 40px;
+}
+
+.driver-desktop-logo-text strong {
+    display: block;
+    color: #0F1A2E;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.driver-desktop-logo-text small {
+    color: #8B93A6;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* portal badge */
+.driver-portal-badge {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    width: 40%;
+    background: #FFF0F1;
+    border: 1px solid rgba(185, 28, 44, 0.18);
+    color: #B91C2C;
+    border-radius: 999px;
+    padding: 5px 14px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.driver-form-inner h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #0F1625;
+    margin: 0 0 6px;
+}
+
+.driver-form-inner > p {
+    color: #5A6478;
+    font-size: 0.93rem;
+    margin: 0 0 28px;
+}
+
+/* field */
+.drv-field {
+    margin-bottom: 16px;
+}
+
+.drv-label {
+    display: block;
+    font-weight: 600;
+    color: #0F1A2E;
+    font-size: 0.84rem;
+    margin-bottom: 7px;
+}
+
+.drv-input-group {
+    position: relative;
+}
+
+.drv-input-group i.field-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8B93A6;
+    font-size: 0.85rem;
+    pointer-events: none;
+}
+
+.drv-input {
+    width: 100%;
+    padding: 13px 16px 13px 44px;
+    border: 1.5px solid #E8EBF1;
+    border-radius: 12px;
+    background: #fff;
+    color: #1B2233;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.drv-input::placeholder {
+    color: #B0B8C8;
+}
+
+.drv-input:focus {
+    outline: none;
+    border-color: #B91C2C;
+    box-shadow: 0 0 0 4px rgba(185, 28, 44, 0.10);
+}
+
+.drv-input--eye {
+    padding-right: 44px;
+}
+
+/* eye toggle */
+.drv-eye-toggle {
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #B0B8C8;
+    font-size: 0.88rem;
+    cursor: pointer;
+    padding: 4px 6px;
+    display: flex;
+    align-items: center;
+    transition: color .2s;
+}
+
+.drv-eye-toggle:hover {
+    color: #B91C2C;
+}
+
+/* vehicle ID note */
+.drv-id-note {
+    font-size: 0.78rem;
+    color: #8B93A6;
+    margin-top: 4px;
+}
+
+/* remember row */
+.drv-remember-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.drv-remember-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #5A6478;
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.drv-remember-label input[type="checkbox"] {
+    accent-color: #B91C2C;
+    width: 15px;
+    height: 15px;
+}
+
+.drv-forgot {
+    color: #B91C2C;
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.drv-forgot:hover {
+    color: #8B1622;
+}
+
+/* submit */
+.drv-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #D72C42 0%, #B91C2C 50%, #8B1622 100%);
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    box-shadow: 0 8px 24px rgba(185, 28, 44, 0.35);
+    transition: opacity .2s, transform .15s, box-shadow .2s;
+}
+
+.drv-btn:hover {
+    opacity: 0.92;
+    transform: translateY(-1px);
+    box-shadow: 0 12px 32px rgba(185, 28, 44, 0.45);
+}
+
+.drv-btn:active {
+    transform: translateY(0);
+}
+
+
+/* ── Mobile hero (≤ 992px) ── */
+.driver-mobile-hero {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .driver-wrap {
+        grid-template-columns: 1fr;
+        background: linear-gradient(145deg, #0F1A2E 0%, #1F2E4E 50%, #6B0F1A 100%);
+    }
+
+    .driver-hero {
+        display: none;
+    }
+
+    .driver-form-wrap {
+        background: transparent;
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    /* mobile hero */
+    .driver-mobile-hero {
+        display: block;
+        position: relative;
+        min-height: 220px;
+        overflow: hidden;
+    }
+
+    .driver-mobile-hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at 15% 40%, rgba(185, 28, 44, 0.32), transparent 45%),
+        url('../img/background/ambulance-bg.jpg') center/cover no-repeat;
+        opacity: 0.18;
+        mix-blend-mode: screen;
+    }
+
+    .driver-mobile-hero-content {
+        position: relative;
+        z-index: 2;
+        padding: 34px 22px 52px;
+    }
+
+    .driver-mobile-logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 11px;
+        text-decoration: none;
+        margin-bottom: 18px;
+    }
+
+    .driver-mobile-logo img {
+        height: 40px;
+        filter: brightness(0) invert(1);
+    }
+
+    .driver-mobile-logo span {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .driver-mobile-logo strong {
+        color: #fff;
+        font-size: 1.08rem;
+        font-weight: 800;
+    }
+
+    .driver-mobile-logo small {
+        color: rgba(255, 255, 255, 0.55);
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .driver-mobile-badges {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .driver-mobile-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        background: rgba(255, 255, 255, 0.13);
+        border: 1px solid rgba(255, 255, 255, 0.20);
+        color: #fff;
+        border-radius: 999px;
+        padding: 5px 12px;
+        font-size: 0.77rem;
+        font-weight: 600;
+        backdrop-filter: blur(4px);
+    }
+
+    .driver-mobile-wave {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+        line-height: 0;
+    }
+
+    .driver-mobile-wave svg {
+        display: block;
+        width: 100%;
+        height: 54px;
+    }
+
+    /* form as card */
+    .driver-form-inner {
+        background: #fff;
+        border-radius: 28px 28px 0 0;
+        margin-top: -28px;
+        position: relative;
+        z-index: 10;
+        box-shadow: 0 -8px 40px rgba(15, 26, 46, 0.18);
+        padding: 34px 24px 48px;
+        max-width: 100%;
+        min-height: calc(100vh - 192px);
+    }
+
+    .driver-desktop-logo {
+        display: none !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .driver-form-inner {
+        padding: 28px 18px 40px;
+    }
+
+    .driver-mobile-hero {
+        min-height: 205px;
+    }
+}
+
+@media (max-width: 420px) {
+    .driver-form-inner {
+        padding: 24px 16px 36px;
+        border-radius: 22px 22px 0 0;
+    }
+}
