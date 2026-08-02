@@ -156,7 +156,7 @@
                         <li><strong>Portability</strong> — Request your data in a machine-readable format.</li>
                         <li><strong>Objection</strong> — Object to processing where we rely on legitimate interest.</li>
                     </ul>
-                    <p>To exercise any of these rights, contact us at <a href="mailto:{{ $contactInfo->email ?? 'info@rapidrescue.com' }}" data-rr-ci="email-link" style="color:var(--rr-primary);font-weight:600;">{{ $contactInfo->email ?? 'info@rapidrescue.com' }}</a>.</p>
+                    <p>To exercise any of these rights, contact us at <a href="mailto:{{ $contactInfo->email ?? 'info@daniyal-khan.com' }}" data-rr-ci="email-link" style="color:var(--rr-primary);font-weight:600;">{{ $contactInfo->email ?? 'info@daniyal-khan.com' }}</a>.</p>
                 </div>
 
                 <div class="rr-legal-section" id="children">
@@ -169,9 +169,9 @@
                     <h2><i class="fa fa-envelope"></i> 10. Contact Us</h2>
                     <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please reach out:</p>
                     <ul>
-                        <li><strong>Email:</strong> <span data-rr-ci="email">{{ $contactInfo->email ?? 'info@rapidrescue.com' }}</span></li>
-                        <li><strong>Phone:</strong> <span data-rr-ci="phone">{{ $contactInfo->phone ?? '+92 xxx xxxxxxx' }}</span> (Mon – Fri, 9 AM – 6 PM)</li>
-                        <li><strong>Address:</strong> <span data-rr-ci="address">{{ $contactInfo['address'] ?? 'XYZ Corporate Office, DHA Phase 6, Karachi, Pakistan' }}</span></li>
+                        <li><strong>Email:</strong> <span data-rr-ci="email">{{ $contactInfo->email ?? 'info@daniyal-khan.com' }}</span></li>
+                        <li><strong>Phone:</strong> <span data-rr-ci="phone">{{ $contactInfo->phone ?? '+92 2172959985' }}</span> (Mon – Fri, 9 AM – 6 PM)</li>
+                        <li><strong>Address:</strong> <span data-rr-ci="address">{{ $contactInfo['address'] ?? 'Faisal Cantonment Karachi, Pakistan' }}</span></li>
                     </ul>
                     <p>We will respond to all legitimate requests within 30 days.</p>
                 </div>

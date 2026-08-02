@@ -119,9 +119,9 @@
                     <h2><i class="fa fa-envelope"></i> 10. Contact Us</h2>
                     <p>If you have any questions about these Terms, please contact us:</p>
                     <ul>
-                        <li><strong>Email:</strong> <span data-rr-ci="email">{{ $contactInfo->email ?? 'info@rapidrescue.com' }}</span></li>
-                        <li><strong>Phone:</strong> 1122 (Emergency) / <span data-rr-ci="phone">{{ $contactInfo->phone ?? '+92 xxx xxxxxxx' }}</span> (Support)</li>
-                        <li><strong>Address:</strong> <span data-rr-ci="address">{{ $contactInfo['address'] ?? 'XYZ Corporate Office, DHA Phase 6, Karachi, Pakistan' }}</span></li>
+                        <li><strong>Email:</strong> <span data-rr-ci="email">{{ $contactInfo->email ?? 'info@daniyal-khan.com' }}</span></li>
+                        <li><strong>Phone:</strong> 1122 (Emergency) / <span data-rr-ci="phone">{{ $contactInfo->phone ?? '+92 2172959985' }}</span> (Support)</li>
+                        <li><strong>Address:</strong> <span data-rr-ci="address">{{ $contactInfo['address'] ?? 'Faisal Cantonment Karachi, Pakistan' }}</span></li>
                     </ul>
                 </div>
 

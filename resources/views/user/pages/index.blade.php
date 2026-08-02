@@ -31,7 +31,7 @@
                         <div class="rr-hero-hotline-icon"><i class="fas fa-phone-alt"></i></div>
                         <div>
                             <small>24/7 Emergency Hotline</small>
-                            <strong>+92 xxx xxxxxxx</strong>
+                            <strong>+92 2172959985</strong>
                         </div>
                     </div>
                 </div>
@@ -600,7 +600,7 @@
 
                         <div class="rr-faq__hotline">
                             <i class="fa fa-phone-volume"></i>
-                            <span data-rr-ci="phone">{{ $contactInfo['phone'] ?? '+92 xxx xxxxxxx' }}</span>
+                            <span data-rr-ci="phone">{{ $contactInfo['phone'] ?? '+92 2172959985' }}</span>
                         </div>
                     </div>
                 </div>
@@ -622,7 +622,7 @@
                     <div class="rr-contact-card">
                         <div class="rr-contact-card__icon"><i class="fas fa-map-marker-alt"></i></div>
                         <h5>Address</h5>
-                        <p data-rr-ci="address">{{ $contactInfo['address'] ?? 'XYZ Corporate Office, DHA Phase 6, Karachi, Pakistan' }}</p>
+                        <p data-rr-ci="address">{{ $contactInfo['address'] ?? 'Faisal Cantonment Karachi, Pakistan' }}</p>
                     </div>
                 </div>
 
@@ -630,7 +630,7 @@
                     <div class="rr-contact-card">
                         <div class="rr-contact-card__icon"><i class="fas fa-envelope"></i></div>
                         <h5>Email Us</h5>
-                        <p data-rr-ci="phone">{{ $contactInfo['email'] ?? 'info@rapidrescue.com' }}</p>
+                        <p data-rr-ci="phone">{{ $contactInfo['email'] ?? 'info@daniyal-khan.com' }}</p>
                     </div>
                 </div>
 
@@ -638,7 +638,7 @@
                     <div class="rr-contact-card">
                         <div class="rr-contact-card__icon"><i class="fas fa-phone-alt"></i></div>
                         <h5>Telephone</h5>
-                        <p data-rr-ci="email">{{ $contactInfo['phone'] ?? '+92 xxx xxxxxxx' }}</p>
+                        <p data-rr-ci="email">{{ $contactInfo['phone'] ?? '+92 2172959985' }}</p>
                     </div>
                 </div>
 
@@ -646,7 +646,7 @@
                     <div class="rr-contact-card">
                         <div class="rr-contact-card__icon"><i class="fas fa-globe"></i></div>
                         <h5>Website</h5>
-                        <p>www.rapidrescue.com</p>
+                        <p>rapid-rescue.daniyal-khan.com</p>
                     </div>
                 </div>
             </div>

@@ -409,9 +409,9 @@
     
         if (!contact) {
             contact = {
-                phone: "+92 xxx xxxxxxx",
-                email: "info@rapidrescue.com",
-                address: "XYZ Corporate Office, DHA Phase 6, Karachi, Pakistan",
+                phone: "+92 2172959985",
+                email: "info@daniyal-khan.com",
+                address: "Faisal Cantonment Karachi, Pakistan",
             };
         }
     

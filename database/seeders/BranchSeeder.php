@@ -11,10 +11,10 @@ class BranchSeeder extends Seeder
     {
         $branches = [
             [
-                'name'    => 'HQ — Manhattan',
-                'address' => '350 Fifth Avenue, Suite 1200, New York, NY 10118',
-                'phone'   => '+12125550100',
-                'email'   => 'manhattan@rapidrescue.com',
+                'name'    => 'HQ — Rapid Rescue',
+                'address' => 'Faisal Cantonment Karachi, Pakistan',
+                'phone'   => '+92 3172959985',
+                'email'   => 'info@daniyal-khan.com',
             ],
             [
                 'name'    => 'Brooklyn Hub',

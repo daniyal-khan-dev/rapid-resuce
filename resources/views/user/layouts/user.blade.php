@@ -72,12 +72,12 @@
                         <i class="fa-solid fa-clock"></i> 24/7 Ambulance Service
                     </span>
 
-                    <a href="tel:{{ $contactInfo->phone ?? '+92 xxx xxxxxxx' }}" data-rr-ci="phone">
-                        <i class="fas fa-phone-alt"></i> {{ $contactInfo->phone ?? '+92 xxx xxxxxxx' }}
+                    <a href="tel:{{ $contactInfo->phone ?? '+92 2172959985' }}" data-rr-ci="phone">
+                        <i class="fas fa-phone-alt"></i> {{ $contactInfo->phone ?? '+92 2172959985' }}
                     </a>
 
-                    <a href="mailto:{{ $contactInfo->email ?? 'info@rapidrescue.com' }}" data-rr-ci="email">
-                        <i class="fas fa-envelope"></i> {{ $contactInfo->email ?? 'info@rapidrescue.com' }}
+                    <a href="mailto:{{ $contactInfo->email ?? 'info@daniyal-khan.com' }}" data-rr-ci="email">
+                        <i class="fas fa-envelope"></i> {{ $contactInfo->email ?? 'info@daniyal-khan.com' }}
                     </a>
                 </div>
 
@@ -302,17 +302,17 @@
                     <h5>Get in Touch</h5>
                     <div class="rr-footer__contact-row">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span data-rr-ci="address">{{ $contactInfo->address ?? 'XYZ Corporate Office, DHA Phase 6, Karachi, Pakistan' }}</span>
+                        <span data-rr-ci="address">{{ $contactInfo->address ?? 'Faisal Cantonment Karachi, Pakistan' }}</span>
                     </div>
 
                     <div class="rr-footer__contact-row">
                         <i class="fas fa-phone-alt"></i>
-                        <span data-rr-ci="phone">{{ $contactInfo->phone ?? '+92 xxx xxxxxxx' }}</span>
+                        <span data-rr-ci="phone">{{ $contactInfo->phone ?? '+92 2172959985' }}</span>
                     </div>
 
                     <div class="rr-footer__contact-row">
                         <i class="fas fa-envelope"></i>
-                        <span data-rr-ci="email">{{ $contactInfo->email ?? 'info@rapidrescue.com' }}</span>
+                        <span data-rr-ci="email">{{ $contactInfo->email ?? 'info@daniyal-khan.com' }}</span>
                     </div>
 
                     <div class="rr-footer__contact-row">

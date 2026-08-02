@@ -543,9 +543,10 @@ Please ensure your code follows PSR-12 coding standards and includes relevant te
 
 **Daniyal Khan**
 
+- 🔗 Portfolio: https://daniyal-khan.com/
 - 🐙 GitHub: [@daniyal-khan-dev](https://github.com/daniyal-khan-dev)
 - 💼 LinkedIn: [linkedin.com/in/m-daniyal-khan](https://linkedin.com/in/m-daniyal-khan)
-- 📧 Email: support@daniyal-khan.com
+- 📧 Email: info@daniyal-khan.com
 
 ---
 

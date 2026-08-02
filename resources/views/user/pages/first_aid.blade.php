@@ -188,7 +188,7 @@
                 <div class="col-lg-8">
                     <div class="rr-fa-hotline">
                         <h4 style="color: white;">Is this a life-threatening emergency?</h4>
-                        <div class="phone" data-rr-ci="phone">{{ $contactInfo->phone ?? '+92 xxx xxxxxxx' }}</div>
+                        <div class="phone" data-rr-ci="phone">{{ $contactInfo->phone ?? '+92 2172959985' }}</div>
                         <p>Our 24/7 emergency hotline connects you directly to our dispatch centre. Help will be on its way within minutes.</p>
                         <a href="{{ route('home') }}#emergency-form" class="rr-btn rr-btn--ghost mt-3" style="display:inline-flex;align-items:center;gap:8px;color:#fff;border-color:rgba(255,255,255,0.4)">
                             <i class="fas fa-ambulance"></i> Request Ambulance Now
